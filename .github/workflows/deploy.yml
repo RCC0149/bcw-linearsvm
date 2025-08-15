@@ -1,0 +1,18 @@
+name: Deploy to Heroku
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to Heroku
+        env:
+          HEROKU_API_KEY: ${{secrets.HRKU-AAAX0eJL9oMs9owa-h-bILx4VWic3FTjia_BmNivYEKg_____wBmyFhM7pyA}}
+        run: |
+          git remote add heroku https://git.heroku.com/bcw-linearsvm.git
+          git push heroku main
