@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Deploy to Heroku
         env:
-          HEROKU_API_KEY: ${{secrets.HRKU-AAQI0ALehVnp3Qb91zgfTxx4VWic3FTjia_BmNivYEKg_____wXR8_KeLdJq}}
+          HEROKU_API_KEY: ${{secrets.HRKU-AA1XFG6iYYRFpTo7JQS6OMx4VWic3FTjia_BmNivYEKg_____wM3o1fcIqci}}
         run: |
           git remote add heroku https://git.heroku.com/bcw-linearsvm.git
           git push heroku main
