@@ -45,7 +45,8 @@ Deployment configuration included:
 - `runtime.txt` – Python runtime specification  
 - `model.pkl` – Serialized LinearSVM model  
 - `scaler.pkl` – Serialized feature scaler  
-- `breast-cancer-wisconsin_cleaned.csv` – Reference dataset  
+- `breast-cancer-wisconsin_cleaned.csv` – Reference dataset
+- `templates/index.html` - Web service format  
 - `.github/workflows/deploy.yml` – CI/CD deployment workflow  
 
 Heroku was selected to demonstrate:
